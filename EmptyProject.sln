@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmptyProject", "EmptyProject\EmptyProject.csproj", "{B6DE1857-17AB-41D5-86CF-AE9BC139D32F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmptyProject", "EmptyProject\EmptyProject.csproj", "{B6DE1857-17AB-41D5-86CF-AE9BC139D32F}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{674351B5-A452-4A1A-910E-3BDE8FB5B04D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmptyProject.Database", "EmptyProject\Database\EmptyProject.Database.csproj", "{0F5C2B3E-2D31-4EA1-8708-94322188F1DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmptyProject.Database", "EmptyProject.Database\EmptyProject.Database.csproj", "{04419306-68F3-400C-AC40-F4DDCB175CD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{674351B5-A452-4A1A-910E-3BDE8FB5B04D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{674351B5-A452-4A1A-910E-3BDE8FB5B04D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{674351B5-A452-4A1A-910E-3BDE8FB5B04D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0F5C2B3E-2D31-4EA1-8708-94322188F1DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0F5C2B3E-2D31-4EA1-8708-94322188F1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0F5C2B3E-2D31-4EA1-8708-94322188F1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0F5C2B3E-2D31-4EA1-8708-94322188F1DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04419306-68F3-400C-AC40-F4DDCB175CD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04419306-68F3-400C-AC40-F4DDCB175CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04419306-68F3-400C-AC40-F4DDCB175CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04419306-68F3-400C-AC40-F4DDCB175CD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
