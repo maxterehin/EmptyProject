@@ -23,7 +23,7 @@ namespace EmptyProject
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            var connection = Environment.GetEnvironmentVariable("DatabaseConnection");
+            var connection = /*Environment.GetEnvironmentVariable("DatabaseConnection") ?? */"Server=(localdb)\\mssqllocaldb;Database=TestDataBase;Trusted_Connection=True;MultipleActiveResultSets=true";
             services.AddDbContextPool<DataContext>(options => options.UseSqlServer(connection));
         }
 

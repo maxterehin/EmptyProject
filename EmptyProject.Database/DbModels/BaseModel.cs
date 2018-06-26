@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace EmptyProject.Database.Models
+namespace EmptyProject.Database.DbModels
 {
     public class BaseModel
     {

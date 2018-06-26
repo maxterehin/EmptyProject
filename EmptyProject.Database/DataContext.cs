@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using EmptyProject.Database.DbModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace EmptyProject.Database
@@ -11,9 +12,11 @@ namespace EmptyProject.Database
             : base(options)
         { }
 
+        public DbSet<Blog> Blogs { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            modelBuilder.Ignore<BaseModel>();
         }
     }
 }
