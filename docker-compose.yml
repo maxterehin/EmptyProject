@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  emptyproject:
+    image: ${DOCKER_REGISTRY}emptyproject
+    build:
+      context: .
+      dockerfile: EmptyProject/Dockerfile
