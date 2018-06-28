@@ -20,6 +20,9 @@ namespace EmptyProject
 
             Log.Logger = new LoggerConfiguration()
                 .ReadFrom.Configuration(configuration)
+                .Enrich.WithThreadId()
+                .Enrich.WithMachineName()
+                .Enrich.FromLogContext()
                 .WriteTo.Console(new CompactJsonFormatter())
                 .CreateLogger();
 

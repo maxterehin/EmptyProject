@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EmptyProject.Core\EmptyProject.Core.csproj" />
     <ProjectReference Include="..\EmptyProject.Database\EmptyProject.Database.csproj" />
   </ItemGroup>
 

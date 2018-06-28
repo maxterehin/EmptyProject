@@ -1,4 +1,5 @@
 ﻿using System;
+using EmptyProject.Core;
 using EmptyProject.Database;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -21,7 +22,9 @@ namespace EmptyProject
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc()
+                .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
+                .AddCoreApplicationPart();
 
             var connection = /*Environment.GetEnvironmentVariable("DatabaseConnection") ?? */"Server=(localdb)\\mssqllocaldb;Database=TestDataBase;Trusted_Connection=True;MultipleActiveResultSets=true";
             services.AddDbContextPool<DataContext>(options => options.UseSqlServer(connection));
