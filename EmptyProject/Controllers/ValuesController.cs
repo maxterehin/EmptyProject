@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace EmptyProject.Controllers
 {
@@ -10,11 +8,19 @@ namespace EmptyProject.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET api/values
+         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "value1", "value2" };
+            var position = new { Latitude = 25, Longitude = 134 };
+            var values = new string[] { "value1", "value2" };
+
+            var input = new { Latitude = 25, Longitude = 134 };
+            var time = 34;
+
+            Log.Information("Processed {@SensorInput} in {TimeMS:000} ms.", input, time);
+
+            return values;
         }
 
         // GET api/values/5
